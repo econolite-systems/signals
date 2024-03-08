@@ -1,0 +1,4 @@
+apiVersion: v1
+description: ODE API Signal Status - A Helm chart for deploying the ODE API Signal Status service
+name: "ode-api-signal-status"
+version: 0.1.0

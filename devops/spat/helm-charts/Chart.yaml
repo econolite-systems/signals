@@ -1,0 +1,4 @@
+apiVersion: v1
+description: ODE Spat Signal Status
+name: "ode-spat-signal-status"
+version: 0.1.1

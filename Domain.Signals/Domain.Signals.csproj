@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+<!-- SPDX-License-Identifier: MIT -->
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>Econolite.Ode.Domain.Signals</RootNamespace>
+    <Copyright>2023-&lt;&lt;CURRENT_YEAR&gt;&gt; Econolite Systems, Inc.</Copyright>
+</PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="$(SolutionDir)\common\Extensions\Extensions.csproj" />
+        <ProjectReference Include="$(SolutionDir)\device-manager\Models.DeviceManager.Mapster\Models.DeviceManager.Mapster.csproj" />
+        <ProjectReference Include="$(SolutionDir)\entities\Domain.Entities\Domain.Entities.csproj" />
+        <ProjectReference Include="..\Models.Signals\Models.Signals.csproj" />
+        <ProjectReference Include="..\Repository.Signals\Repository.Signals.csproj" />
+    </ItemGroup>
+
+</Project>

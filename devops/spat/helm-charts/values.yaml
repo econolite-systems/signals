@@ -1,0 +1,11 @@
+odeSpatSignalStatus:
+  name: ode-spat-signal-status
+  imageRepository: cosysdev.azurecr.io/ode-spat-signal-status
+  service:
+    port: 80
+  probes:
+    enabled: false
+  ingress:
+    host: api.mound-rd.cosysdev.com
+  kafka:
+    groupId: 'spat-signal-status-release'

@@ -1,0 +1,11 @@
+# Service-specific configurations for ode-api-signal-status
+odeApiSignalStatus:
+  name: ode-api-signal-status
+  imageRepository: cosysdev.azurecr.io/ode-api-signal-status
+  service:
+    port: 80
+  ingress:
+    host: signal-status.api.mound-rd.cosysdev.com
+  kafka:
+    groupId: 'api-signal-status'
+  resources: {}

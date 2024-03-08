@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+<!-- SPDX-License-Identifier: MIT -->
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UserSecretsId>dotnet-Worker.Spat.Signals-EB084938-A1FF-424E-A181-AA69CEAFA208</UserSecretsId>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+        <RootNamespace>Econolite.Ode.Spat.Signals</RootNamespace>
+    <Copyright>2023-&lt;&lt;CURRENT_YEAR&gt;&gt; Econolite Systems, Inc.</Copyright>
+</PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.18.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="$(SolutionDir)\asn1-j2735\Domain.Asn1.J2735\Domain.Asn1.J2735.csproj" />
+        <ProjectReference Include="$(SolutionDir)\common\Extensions.AspNet\Extensions.AspNet.csproj" />
+        <ProjectReference Include="$(SolutionDir)\entities\Models.Entities\Models.Entities.csproj" />
+		<ProjectReference Include="$(SolutionDir)\status\Status.Signal.Messaging\Status.Signal.Messaging.csproj" />
+		<ProjectReference Include="$(SolutionDir)\status\Status.Bsm.Messaging\Status.Bsm.Messaging.csproj" />
+        <ProjectReference Include="..\Models.Signals\Models.Signals.csproj" />
+    </ItemGroup>
+</Project>
